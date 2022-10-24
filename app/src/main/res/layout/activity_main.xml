@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="hardCodedText"
+    android:background="#D3E5EC"
+    >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="#FFFFFF"
+        >
+
+    <LinearLayout
+        android:id="@+id/expression"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layoutDirection="ltr"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_15sdp"
+        android:background="#AECAD5"
+        >
+
+    <TextView
+        android:id="@+id/a"
+        android:text="7"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_40sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/sign"
+        android:text="+"
+        android:textAlignment="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_40sdp"
+        android:minWidth="@dimen/_80sdp"/>
+
+    <TextView
+        android:id="@+id/b"
+        android:text="10"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_40sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:text="="
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/_40sdp"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:id="@+id/resultInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="@dimen/_50sdp"
+        android:textAlignment="center"
+        android:textSize="@dimen/_40sdp"
+        android:inputType="number"
+        />
+
+    </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
