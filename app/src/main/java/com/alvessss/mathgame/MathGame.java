@@ -1,6 +1,9 @@
 package com.alvessss.mathgame;
 
+import android.util.Log;
+import android.util.TypedValue;
 import android.view.KeyEvent;
+import android.view.View;
 import android.view.inputmethod.EditorInfo;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -35,11 +38,14 @@ public class MathGame {
                etUserResponse.setText("");
                return true;
             }
-
             return false;
          }
       });
 
+   }
+
+   void start() {
+      generateNewExpression();
    }
 
    void generateNewExpression() {
